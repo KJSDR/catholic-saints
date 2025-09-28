@@ -1,0 +1,300 @@
+{
+    "nodes": [
+      {
+        "id": "peter",
+        "name": "St. Peter",
+        "type": "apostle",
+        "feastDay": "June 29",
+        "patronage": "Popes, Fishermen",
+        "year": 64,
+        "size": 20
+      },
+      {
+        "id": "paul",
+        "name": "St. Paul",
+        "type": "apostle",
+        "feastDay": "June 29",
+        "patronage": "Writers, Missionaries",
+        "year": 67,
+        "size": 20
+      },
+      {
+        "id": "john",
+        "name": "St. John",
+        "type": "apostle",
+        "feastDay": "December 27",
+        "patronage": "Love, Loyalty",
+        "year": 100,
+        "size": 18
+      },
+      {
+        "id": "augustine",
+        "name": "St. Augustine",
+        "type": "doctor",
+        "feastDay": "August 28",
+        "patronage": "Theologians, Printers",
+        "year": 430,
+        "size": 18
+      },
+      {
+        "id": "aquinas",
+        "name": "St. Thomas Aquinas",
+        "type": "doctor",
+        "feastDay": "January 28",
+        "patronage": "Students, Universities",
+        "year": 1274,
+        "size": 18
+      },
+      {
+        "id": "teresa-avila",
+        "name": "St. Teresa of Ávila",
+        "type": "doctor",
+        "feastDay": "October 15",
+        "patronage": "Spain, Headache sufferers",
+        "year": 1582,
+        "size": 16
+      },
+      {
+        "id": "therese",
+        "name": "St. Thérèse of Lisieux",
+        "type": "doctor",
+        "feastDay": "October 1",
+        "patronage": "Missions, France",
+        "year": 1897,
+        "size": 16
+      },
+      {
+        "id": "benedict",
+        "name": "St. Benedict",
+        "type": "founder",
+        "feastDay": "July 11",
+        "patronage": "Europe, Students",
+        "year": 547,
+        "size": 17
+      },
+      {
+        "id": "francis",
+        "name": "St. Francis of Assisi",
+        "type": "founder",
+        "feastDay": "October 4",
+        "patronage": "Animals, Ecology",
+        "year": 1226,
+        "size": 18
+      },
+      {
+        "id": "dominic",
+        "name": "St. Dominic",
+        "type": "founder",
+        "feastDay": "August 8",
+        "patronage": "Astronomers, Dominican Order",
+        "year": 1221,
+        "size": 16
+      },
+      {
+        "id": "ignatius",
+        "name": "St. Ignatius of Loyola",
+        "type": "founder",
+        "feastDay": "July 31",
+        "patronage": "Soldiers, Jesuits",
+        "year": 1556,
+        "size": 17
+      },
+      {
+        "id": "stephen",
+        "name": "St. Stephen",
+        "type": "martyr",
+        "feastDay": "December 26",
+        "patronage": "Deacons, Stonemasons",
+        "year": 36,
+        "size": 15
+      },
+      {
+        "id": "lawrence",
+        "name": "St. Lawrence",
+        "type": "martyr",
+        "feastDay": "August 10",
+        "patronage": "Cooks, Poor",
+        "year": 258,
+        "size": 14
+      },
+      {
+        "id": "cecilia",
+        "name": "St. Cecilia",
+        "type": "martyr",
+        "feastDay": "November 22",
+        "patronage": "Musicians, Singers",
+        "year": 230,
+        "size": 14
+      },
+      {
+        "id": "catherine-siena",
+        "name": "St. Catherine of Siena",
+        "type": "mystic",
+        "feastDay": "April 29",
+        "patronage": "Europe, Nurses",
+        "year": 1380,
+        "size": 16
+      },
+      {
+        "id": "john-cross",
+        "name": "St. John of the Cross",
+        "type": "mystic",
+        "feastDay": "December 14",
+        "patronage": "Contemplatives, Mystics",
+        "year": 1591,
+        "size": 15
+      },
+      {
+        "id": "padre-pio",
+        "name": "St. Padre Pio",
+        "type": "mystic",
+        "feastDay": "September 23",
+        "patronage": "Stress relief, Healing",
+        "year": 1968,
+        "size": 17
+      },
+      {
+        "id": "anthony",
+        "name": "St. Anthony of Padua",
+        "type": "founder",
+        "feastDay": "June 13",
+        "patronage": "Lost items, Poor",
+        "year": 1231,
+        "size": 16
+      },
+      {
+        "id": "clare",
+        "name": "St. Clare of Assisi",
+        "type": "founder",
+        "feastDay": "August 11",
+        "patronage": "Television, Eye disease",
+        "year": 1253,
+        "size": 14
+      },
+      {
+        "id": "jerome",
+        "name": "St. Jerome",
+        "type": "doctor",
+        "feastDay": "September 30",
+        "patronage": "Translators, Librarians",
+        "year": 420,
+        "size": 15
+      },
+      {
+        "id": "patrick",
+        "name": "St. Patrick",
+        "type": "founder",
+        "feastDay": "March 17",
+        "patronage": "Ireland, Engineers",
+        "year": 461,
+        "size": 16
+      }
+    ],
+    "links": [
+      {
+        "source": "peter",
+        "target": "paul",
+        "type": "contemporary"
+      },
+      {
+        "source": "peter",
+        "target": "john",
+        "type": "contemporary"
+      },
+      {
+        "source": "paul",
+        "target": "john",
+        "type": "contemporary"
+      },
+      {
+        "source": "peter",
+        "target": "stephen",
+        "type": "mentor"
+      },
+      {
+        "source": "augustine",
+        "target": "benedict",
+        "type": "influence"
+      },
+      {
+        "source": "augustine",
+        "target": "aquinas",
+        "type": "influence"
+      },
+      {
+        "source": "paul",
+        "target": "augustine",
+        "type": "influence"
+      },
+      {
+        "source": "benedict",
+        "target": "francis",
+        "type": "influence"
+      },
+      {
+        "source": "francis",
+        "target": "dominic",
+        "type": "contemporary"
+      },
+      {
+        "source": "francis",
+        "target": "anthony",
+        "type": "mentor"
+      },
+      {
+        "source": "francis",
+        "target": "clare",
+        "type": "mentor"
+      },
+      {
+        "source": "dominic",
+        "target": "aquinas",
+        "type": "order"
+      },
+      {
+        "source": "ignatius",
+        "target": "teresa-avila",
+        "type": "contemporary"
+      },
+      {
+        "source": "teresa-avila",
+        "target": "john-cross",
+        "type": "mentor"
+      },
+      {
+        "source": "augustine",
+        "target": "jerome",
+        "type": "contemporary"
+      },
+      {
+        "source": "aquinas",
+        "target": "catherine-siena",
+        "type": "influence"
+      },
+      {
+        "source": "teresa-avila",
+        "target": "therese",
+        "type": "influence"
+      },
+      {
+        "source": "therese",
+        "target": "padre-pio",
+        "type": "influence"
+      },
+      {
+        "source": "francis",
+        "target": "padre-pio",
+        "type": "order"
+      },
+      {
+        "source": "lawrence",
+        "target": "cecilia",
+        "type": "contemporary"
+      },
+      {
+        "source": "patrick",
+        "target": "benedict",
+        "type": "influence"
+      }
+    ]
+  }
