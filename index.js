@@ -56,13 +56,18 @@ function setupVisualization() {
         .force("x", d3.forceX(width / 2).strength(0.1))
         .force("y", d3.forceY(height / 2).strength(0.1));
 
-    // Create links
+    // Create links with hover functionality
     link = svg.append("g")
         .selectAll("line")
         .data(saintsData.links)
         .join("line")
         .attr("class", "link")
-        .attr("stroke-width", d => d.type === "mentor" ? 2 : 1);
+        .attr("stroke-width", d => d.type === "mentor" ? 3 : d.type === "order" ? 2 : 1)
+        .style("cursor", "pointer");
+
+    // Add link interactions
+    link.on("mouseover", handleLinkMouseOver)
+        .on("mouseout", handleLinkMouseOut);
 
     // Create nodes
     node = svg.append("g")
@@ -120,6 +125,82 @@ function handleMouseOut(event, d) {
 
     // Hide tooltip
     tooltip.style("opacity", 0);
+}
+
+function handleLinkMouseOver(event, d) {
+    // Highlight the link
+    d3.select(this)
+        .transition()
+        .duration(200)
+        .attr("stroke-width", d => (d.type === "mentor" ? 5 : d.type === "order" ? 4 : 3))
+        .style("stroke", "#ffd700");
+
+    // Get relationship description
+    const relationshipDescriptions = {
+        "mentor": "Mentor-Student relationship",
+        "contemporary": "Lived at the same time",
+        "influence": "Theological/spiritual influence", 
+        "order": "Same religious order",
+        "friend": "Personal friendship",
+        "colleague": "Worked together"
+    };
+
+    const description = relationshipDescriptions[d.type] || "Connected";
+    
+    // Show tooltip
+    tooltip
+        .style("opacity", 1)
+        .html(`
+            <h3>${d.source.name} ↔ ${d.target.name}</h3>
+            <p><strong>Relationship:</strong> ${description}</p>
+            <p><em>${getRelationshipDetail(d)}</em></p>
+        `)
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 10) + "px");
+}
+
+function handleLinkMouseOut(event, d) {
+    // Reset link appearance
+    d3.select(this)
+        .transition()
+        .duration(200)
+        .attr("stroke-width", d => d.type === "mentor" ? 3 : d.type === "order" ? 2 : 1)
+        .style("stroke", "rgba(255, 255, 255, 0.3)");
+
+    // Hide tooltip
+    tooltip.style("opacity", 0);
+}
+
+function getRelationshipDetail(d) {
+    // Add specific details about relationships
+    const details = {
+        "peter-paul": "Both apostles who worked together in the early Church",
+        "peter-john": "Fellow apostles and close companions of Jesus",
+        "paul-john": "Collaborated in spreading Christianity",
+        "peter-stephen": "Peter likely ordained Stephen as first deacon",
+        "augustine-benedict": "Augustine's writings influenced Benedict's Rule",
+        "augustine-aquinas": "Aquinas built upon Augustine's theological foundation",
+        "paul-augustine": "Augustine was deeply influenced by Paul's letters",
+        "benedict-francis": "Francis was inspired by monastic tradition",
+        "francis-dominic": "Contemporary founders with different approaches",
+        "francis-anthony": "Anthony joined the Franciscan order under Francis",
+        "francis-clare": "Francis guided Clare in founding the Poor Clares",
+        "dominic-aquinas": "Aquinas was a Dominican friar",
+        "ignatius-teresa-avila": "Counter-Reformation reformers and mystics",
+        "teresa-avila-john-cross": "Teresa guided John in mystical theology",
+        "augustine-jerome": "Corresponded frequently about theological matters",
+        "aquinas-catherine-siena": "Catherine was influenced by Dominican theology",
+        "teresa-avila-therese": "Thérèse was inspired by Teresa's writings",
+        "therese-padre-pio": "Both promoted devotion to the Sacred Heart",
+        "francis-padre-pio": "Padre Pio was a Franciscan friar",
+        "lawrence-cecilia": "Both Roman martyrs of the 3rd century",
+        "patrick-benedict": "Patrick's missionary work influenced monasticism"
+    };
+    
+    const key1 = `${d.source.id}-${d.target.id}`;
+    const key2 = `${d.target.id}-${d.source.id}`;
+    
+    return details[key1] || details[key2] || "These saints shared important connections in Church history";
 }
 
 function updatePositions() {

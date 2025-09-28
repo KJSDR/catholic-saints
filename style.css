@@ -83,6 +83,12 @@ button.active {
 .link {
     stroke: rgba(255, 255, 255, 0.3);
     stroke-opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    stroke: #ffd700;
+    stroke-opacity: 1;
 }
 
 .node-label {
