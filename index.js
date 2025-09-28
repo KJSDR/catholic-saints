@@ -194,7 +194,26 @@ function getRelationshipDetail(d) {
         "therese-padre-pio": "Both promoted devotion to the Sacred Heart",
         "francis-padre-pio": "Padre Pio was a Franciscan friar",
         "lawrence-cecilia": "Both Roman martyrs of the 3rd century",
-        "patrick-benedict": "Patrick's missionary work influenced monasticism"
+        "patrick-benedict": "Patrick's missionary work influenced monasticism",
+        "mary-john": "Mary entrusted to John's care at the crucifixion",
+        "mary-joseph": "Holy Family - married and raised Jesus together",
+        "mary-john-baptist": "John the Baptist announced Jesus' coming to Mary",
+        "mary-mary-magdalene": "Both witnessed Jesus' crucifixion and resurrection",
+        "joseph-john-baptist": "Both central figures in Jesus' early life",
+        "john-baptist-peter": "John baptized Jesus, Peter became first Pope",
+        "john-baptist-john": "John the Baptist was John the Apostle's namesake",
+        "mary-magdalene-peter": "First witnesses to the resurrection",
+        "mary-magdalene-paul": "Both experienced dramatic conversions",
+        "monica-augustine": "Monica prayed for Augustine's conversion for years",
+        "martin-tours-augustine": "Both bishops and theologians of the 4th century",
+        "martin-tours-benedict": "Martin's monasticism influenced Benedict",
+        "basil-augustine": "Both Church Fathers and bishops",
+        "basil-jerome": "Both translated and preserved Scripture",
+        "elizabeth-hungary-francis": "Both devoted to serving the poor",
+        "elizabeth-hungary-dominic": "Elizabeth inspired by Dominican spirituality",
+        "joan-arc-catherine-siena": "Both received visions and influenced politics",
+        "mary-teresa-avila": "Teresa had deep Marian devotion",
+        "mary-therese": "Thérèse's 'Little Way' centered on Mary"
     };
     
     const key1 = `${d.source.id}-${d.target.id}`;

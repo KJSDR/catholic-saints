@@ -188,6 +188,87 @@
         "patronage": "Ireland, Engineers",
         "year": 461,
         "size": 16
+      },
+      {
+        "id": "mary",
+        "name": "Blessed Virgin Mary",
+        "type": "apostle",
+        "feastDay": "August 15",
+        "patronage": "Universal Mother",
+        "year": 50,
+        "size": 22
+      },
+      {
+        "id": "joseph",
+        "name": "St. Joseph",
+        "type": "apostle",
+        "feastDay": "March 19",
+        "patronage": "Workers, Fathers",
+        "year": 50,
+        "size": 20
+      },
+      {
+        "id": "joan-arc",
+        "name": "St. Joan of Arc",
+        "type": "martyr",
+        "feastDay": "May 30",
+        "patronage": "France, Soldiers",
+        "year": 1431,
+        "size": 17
+      },
+      {
+        "id": "monica",
+        "name": "St. Monica",
+        "type": "mystic",
+        "feastDay": "August 27",
+        "patronage": "Mothers, Difficult marriages",
+        "year": 387,
+        "size": 15
+      },
+      {
+        "id": "john-baptist",
+        "name": "St. John the Baptist",
+        "type": "apostle",
+        "feastDay": "June 24",
+        "patronage": "Baptism, Jordan",
+        "year": 30,
+        "size": 19
+      },
+      {
+        "id": "elizabeth-hungary",
+        "name": "St. Elizabeth of Hungary",
+        "type": "founder",
+        "feastDay": "November 17",
+        "patronage": "Bakers, Charitable societies",
+        "year": 1231,
+        "size": 15
+      },
+      {
+        "id": "basil",
+        "name": "St. Basil the Great",
+        "type": "doctor",
+        "feastDay": "January 2",
+        "patronage": "Hospital administrators",
+        "year": 379,
+        "size": 16
+      },
+      {
+        "id": "mary-magdalene",
+        "name": "St. Mary Magdalene",
+        "type": "apostle",
+        "feastDay": "July 22",
+        "patronage": "Penitent sinners",
+        "year": 63,
+        "size": 17
+      },
+      {
+        "id": "martin-tours",
+        "name": "St. Martin of Tours",
+        "type": "founder",
+        "feastDay": "November 11",
+        "patronage": "France, Soldiers",
+        "year": 397,
+        "size": 16
       }
     ],
     "links": [
@@ -294,6 +375,101 @@
       {
         "source": "patrick",
         "target": "benedict",
+        "type": "influence"
+      },
+      {
+        "source": "mary",
+        "target": "john",
+        "type": "contemporary"
+      },
+      {
+        "source": "mary",
+        "target": "joseph",
+        "type": "contemporary"
+      },
+      {
+        "source": "mary",
+        "target": "john-baptist",
+        "type": "contemporary"
+      },
+      {
+        "source": "mary",
+        "target": "mary-magdalene",
+        "type": "contemporary"
+      },
+      {
+        "source": "joseph",
+        "target": "john-baptist",
+        "type": "contemporary"
+      },
+      {
+        "source": "john-baptist",
+        "target": "peter",
+        "type": "influence"
+      },
+      {
+        "source": "john-baptist",
+        "target": "john",
+        "type": "mentor"
+      },
+      {
+        "source": "mary-magdalene",
+        "target": "peter",
+        "type": "contemporary"
+      },
+      {
+        "source": "mary-magdalene",
+        "target": "paul",
+        "type": "contemporary"
+      },
+      {
+        "source": "monica",
+        "target": "augustine",
+        "type": "mentor"
+      },
+      {
+        "source": "martin-tours",
+        "target": "augustine",
+        "type": "contemporary"
+      },
+      {
+        "source": "martin-tours",
+        "target": "benedict",
+        "type": "influence"
+      },
+      {
+        "source": "basil",
+        "target": "augustine",
+        "type": "contemporary"
+      },
+      {
+        "source": "basil",
+        "target": "jerome",
+        "type": "contemporary"
+      },
+      {
+        "source": "elizabeth-hungary",
+        "target": "francis",
+        "type": "contemporary"
+      },
+      {
+        "source": "elizabeth-hungary",
+        "target": "dominic",
+        "type": "contemporary"
+      },
+      {
+        "source": "joan-arc",
+        "target": "catherine-siena",
+        "type": "influence"
+      },
+      {
+        "source": "mary",
+        "target": "teresa-avila",
+        "type": "influence"
+      },
+      {
+        "source": "mary",
+        "target": "therese",
         "type": "influence"
       }
     ]
