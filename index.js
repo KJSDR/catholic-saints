@@ -1,6 +1,3 @@
-// Catholic Saints Network Visualization
-// Main JavaScript file for the interactive network graph
-
 // Global variables
 let saintsData = {};
 let svg, node, link, label, simulation, tooltip;
