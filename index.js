@@ -32,7 +32,7 @@ async function init() {
     } catch (error) {
         console.error('Error loading saints data:', error);
         document.getElementById('network').innerHTML = 
-            '<p style="text-align: center; color: #ffd700;">Error loading saints data. Please check that all files are present.</p>';
+            '<p style="text-align: center; color: #8B4513;">Error loading saints data. Please check that all files are present.</p>';
     }
 }
 
@@ -65,10 +65,6 @@ function setupVisualization() {
         .attr("stroke-width", d => d.type === "mentor" ? 3 : d.type === "order" ? 2 : 1)
         .style("cursor", "pointer");
 
-    // Add link interactions
-    link.on("mouseover", handleLinkMouseOver)
-        .on("mouseout", handleLinkMouseOut);
-
     // Create nodes
     node = svg.append("g")
         .selectAll("circle")
@@ -85,12 +81,16 @@ function setupVisualization() {
         .data(saintsData.nodes)
         .join("text")
         .attr("class", "node-label")
-        .text(d => d.name.replace("St. ", ""))
+        .text(d => d.name.replace("St. ", "").replace("Blessed ", ""))
         .attr("dy", d => d.size + 15);
 
     // Add node interactions
     node.on("mouseover", handleMouseOver)
         .on("mouseout", handleMouseOut);
+
+    // Add link interactions
+    link.on("mouseover", handleLinkMouseOver)
+        .on("mouseout", handleLinkMouseOut);
 
     // Update positions on simulation tick
     simulation.on("tick", updatePositions);
@@ -103,14 +103,21 @@ function handleMouseOver(event, d) {
         .duration(200)
         .attr("r", d => d.size * 1.3);
 
-    // Show tooltip
+    // Calculate lifespan
+    const lifespan = d.deathYear - d.birthYear;
+    const birthDisplay = d.birthYear < 0 ? `${Math.abs(d.birthYear)} BC` : `${d.birthYear} AD`;
+    const deathDisplay = d.deathYear < 0 ? `${Math.abs(d.deathYear)} BC` : `${d.deathYear} AD`;
+
+    // Show enhanced tooltip
     tooltip
         .style("opacity", 1)
         .html(`
             <h3>${d.name}</h3>
             <p class="feast-day">Feast Day: ${d.feastDay}</p>
+            <p><strong>Life:</strong> ${birthDisplay} - ${deathDisplay} (${lifespan} years)</p>
+            <p><strong>Location:</strong> ${d.location}</p>
             <p><strong>Patronage:</strong> ${d.patronage}</p>
-            <p><strong>Died:</strong> ${d.year} AD</p>
+            <p><em>${d.description}</em></p>
         `)
         .style("left", (event.pageX + 10) + "px")
         .style("top", (event.pageY - 10) + "px");
@@ -133,7 +140,7 @@ function handleLinkMouseOver(event, d) {
         .transition()
         .duration(200)
         .attr("stroke-width", d => (d.type === "mentor" ? 5 : d.type === "order" ? 4 : 3))
-        .style("stroke", "#ffd700");
+        .style("stroke", "#8B4513");
 
     // Get relationship description
     const relationshipDescriptions = {
@@ -165,7 +172,7 @@ function handleLinkMouseOut(event, d) {
         .transition()
         .duration(200)
         .attr("stroke-width", d => d.type === "mentor" ? 3 : d.type === "order" ? 2 : 1)
-        .style("stroke", "rgba(255, 255, 255, 0.3)");
+        .style("stroke", "rgba(139, 69, 19, 0.4)");
 
     // Hide tooltip
     tooltip.style("opacity", 0);
@@ -213,7 +220,19 @@ function getRelationshipDetail(d) {
         "elizabeth-hungary-dominic": "Elizabeth inspired by Dominican spirituality",
         "joan-arc-catherine-siena": "Both received visions and influenced politics",
         "mary-teresa-avila": "Teresa had deep Marian devotion",
-        "mary-therese": "Thérèse's 'Little Way' centered on Mary"
+        "mary-therese": "Thérèse's 'Little Way' centered on Mary",
+        "mother-teresa-john-paul-ii": "John Paul II supported Mother Teresa's work",
+        "maximilian-kolbe-john-paul-ii": "Both Polish saints, John Paul beatified Kolbe",
+        "maximilian-kolbe-francis": "Kolbe was a Franciscan friar and martyr",
+        "john-chrysostom-basil": "Cappadocian Fathers and theologians",
+        "gregory-nazianzus-basil": "Cappadocian Fathers, defended Trinity",
+        "john-chrysostom-gregory-nazianzus": "Both great preachers and theologians",
+        "john-xxiii-john-paul-ii": "John XXIII's reforms influenced John Paul II",
+        "faustina-john-paul-ii": "John Paul II canonized Faustina, promoted Divine Mercy",
+        "faustina-therese": "Both promoted trust in God's mercy",
+        "rose-lima-teresa-avila": "Both mystics influenced by Carmelite spirituality",
+        "rose-lima-dominic": "Rose was a Dominican tertiary",
+        "mother-teresa-therese": "Teresa inspired by Thérèse's 'Little Way'"
     };
     
     const key1 = `${d.source.id}-${d.target.id}`;
@@ -277,7 +296,7 @@ function filterAll() {
     updateButtons();
     node.style("opacity", 1);
     label.style("opacity", 1);
-    link.style("opacity", 0.6);
+    link.style("opacity", 0.7);
 }
 
 function filterByType(type) {
@@ -287,7 +306,7 @@ function filterByType(type) {
     node.style("opacity", d => d.type === type ? 1 : 0.2);
     label.style("opacity", d => d.type === type ? 1 : 0.2);
     link.style("opacity", d => 
-        (d.source.type === type || d.target.type === type) ? 0.6 : 0.1
+        (d.source.type === type || d.target.type === type) ? 0.7 : 0.1
     );
 }
 

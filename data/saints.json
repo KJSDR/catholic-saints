@@ -6,7 +6,10 @@
         "type": "apostle",
         "feastDay": "June 29",
         "patronage": "Popes, Fishermen",
-        "year": 64,
+        "birthYear": 1,
+        "deathYear": 64,
+        "location": "Galilee, Palestine",
+        "description": "First Pope, leader of the apostles, martyred in Rome",
         "size": 20
       },
       {
@@ -15,7 +18,10 @@
         "type": "apostle",
         "feastDay": "June 29",
         "patronage": "Writers, Missionaries",
-        "year": 67,
+        "birthYear": 5,
+        "deathYear": 67,
+        "location": "Tarsus, Turkey",
+        "description": "Apostle to the Gentiles, wrote much of the New Testament",
         "size": 20
       },
       {
@@ -24,7 +30,10 @@
         "type": "apostle",
         "feastDay": "December 27",
         "patronage": "Love, Loyalty",
-        "year": 100,
+        "birthYear": 6,
+        "deathYear": 100,
+        "location": "Galilee, Palestine",
+        "description": "Beloved apostle, wrote Gospel and Revelation",
         "size": 18
       },
       {
@@ -33,7 +42,10 @@
         "type": "doctor",
         "feastDay": "August 28",
         "patronage": "Theologians, Printers",
-        "year": 430,
+        "birthYear": 354,
+        "deathYear": 430,
+        "location": "Hippo, Algeria",
+        "description": "Doctor of the Church, wrote Confessions and City of God",
         "size": 18
       },
       {
@@ -42,7 +54,10 @@
         "type": "doctor",
         "feastDay": "January 28",
         "patronage": "Students, Universities",
-        "year": 1274,
+        "birthYear": 1225,
+        "deathYear": 1274,
+        "location": "Italy",
+        "description": "Greatest medieval theologian, wrote Summa Theologica",
         "size": 18
       },
       {
@@ -51,7 +66,10 @@
         "type": "doctor",
         "feastDay": "October 15",
         "patronage": "Spain, Headache sufferers",
-        "year": 1582,
+        "birthYear": 1515,
+        "deathYear": 1582,
+        "location": "Ávila, Spain",
+        "description": "Carmelite mystic, reformed religious life, Doctor of the Church",
         "size": 16
       },
       {
@@ -60,7 +78,10 @@
         "type": "doctor",
         "feastDay": "October 1",
         "patronage": "Missions, France",
-        "year": 1897,
+        "birthYear": 1873,
+        "deathYear": 1897,
+        "location": "Lisieux, France",
+        "description": "The Little Flower, developed the 'Little Way' of spiritual childhood",
         "size": 16
       },
       {
@@ -69,7 +90,10 @@
         "type": "founder",
         "feastDay": "July 11",
         "patronage": "Europe, Students",
-        "year": 547,
+        "birthYear": 480,
+        "deathYear": 547,
+        "location": "Nursia, Italy",
+        "description": "Father of Western monasticism, wrote the Rule of St. Benedict",
         "size": 17
       },
       {
@@ -78,7 +102,10 @@
         "type": "founder",
         "feastDay": "October 4",
         "patronage": "Animals, Ecology",
-        "year": 1226,
+        "birthYear": 1181,
+        "deathYear": 1226,
+        "location": "Assisi, Italy",
+        "description": "Founded Franciscans, embraced radical poverty and creation",
         "size": 18
       },
       {
@@ -87,7 +114,10 @@
         "type": "founder",
         "feastDay": "August 8",
         "patronage": "Astronomers, Dominican Order",
-        "year": 1221,
+        "birthYear": 1170,
+        "deathYear": 1221,
+        "location": "Caleruega, Spain",
+        "description": "Founded Dominicans, promoted education and preaching",
         "size": 16
       },
       {
@@ -96,7 +126,10 @@
         "type": "founder",
         "feastDay": "July 31",
         "patronage": "Soldiers, Jesuits",
-        "year": 1556,
+        "birthYear": 1491,
+        "deathYear": 1556,
+        "location": "Loyola, Spain",
+        "description": "Founded Jesuits, wrote Spiritual Exercises",
         "size": 17
       },
       {
@@ -105,7 +138,10 @@
         "type": "martyr",
         "feastDay": "December 26",
         "patronage": "Deacons, Stonemasons",
-        "year": 36,
+        "birthYear": 5,
+        "deathYear": 36,
+        "location": "Jerusalem, Palestine",
+        "description": "First Christian martyr, first deacon of the early Church",
         "size": 15
       },
       {
@@ -114,7 +150,10 @@
         "type": "martyr",
         "feastDay": "August 10",
         "patronage": "Cooks, Poor",
-        "year": 258,
+        "birthYear": 225,
+        "deathYear": 258,
+        "location": "Rome, Italy",
+        "description": "Deacon martyred on a gridiron, distributed Church treasures to poor",
         "size": 14
       },
       {
@@ -123,7 +162,10 @@
         "type": "martyr",
         "feastDay": "November 22",
         "patronage": "Musicians, Singers",
-        "year": 230,
+        "birthYear": 200,
+        "deathYear": 230,
+        "location": "Rome, Italy",
+        "description": "Virgin martyr who sang to God, patron of sacred music",
         "size": 14
       },
       {
@@ -132,7 +174,10 @@
         "type": "mystic",
         "feastDay": "April 29",
         "patronage": "Europe, Nurses",
-        "year": 1380,
+        "birthYear": 1347,
+        "deathYear": 1380,
+        "location": "Siena, Italy",
+        "description": "Dominican mystic who advised popes, ended Avignon Papacy",
         "size": 16
       },
       {
@@ -141,7 +186,10 @@
         "type": "mystic",
         "feastDay": "December 14",
         "patronage": "Contemplatives, Mystics",
-        "year": 1591,
+        "birthYear": 1542,
+        "deathYear": 1591,
+        "location": "Fontiveros, Spain",
+        "description": "Carmelite mystic, wrote 'Dark Night of the Soul'",
         "size": 15
       },
       {
@@ -150,7 +198,10 @@
         "type": "mystic",
         "feastDay": "September 23",
         "patronage": "Stress relief, Healing",
-        "year": 1968,
+        "birthYear": 1887,
+        "deathYear": 1968,
+        "location": "Pietrelcina, Italy",
+        "description": "Capuchin friar with stigmata, known for healing and bilocation",
         "size": 17
       },
       {
@@ -159,7 +210,10 @@
         "type": "founder",
         "feastDay": "June 13",
         "patronage": "Lost items, Poor",
-        "year": 1231,
+        "birthYear": 1195,
+        "deathYear": 1231,
+        "location": "Lisbon, Portugal",
+        "description": "Franciscan preacher and theologian, Doctor of the Church",
         "size": 16
       },
       {
@@ -168,7 +222,10 @@
         "type": "founder",
         "feastDay": "August 11",
         "patronage": "Television, Eye disease",
-        "year": 1253,
+        "birthYear": 1194,
+        "deathYear": 1253,
+        "location": "Assisi, Italy",
+        "description": "Founded Poor Clares, embraced radical poverty with Francis",
         "size": 14
       },
       {
@@ -177,7 +234,10 @@
         "type": "doctor",
         "feastDay": "September 30",
         "patronage": "Translators, Librarians",
-        "year": 420,
+        "birthYear": 347,
+        "deathYear": 420,
+        "location": "Stridon, Croatia",
+        "description": "Translated Bible into Latin Vulgate, Church Father",
         "size": 15
       },
       {
@@ -186,7 +246,10 @@
         "type": "founder",
         "feastDay": "March 17",
         "patronage": "Ireland, Engineers",
-        "year": 461,
+        "birthYear": 385,
+        "deathYear": 461,
+        "location": "Britain",
+        "description": "Apostle of Ireland, established Christianity throughout Ireland",
         "size": 16
       },
       {
@@ -195,7 +258,10 @@
         "type": "apostle",
         "feastDay": "August 15",
         "patronage": "Universal Mother",
-        "year": 50,
+        "birthYear": -20,
+        "deathYear": 50,
+        "location": "Nazareth, Palestine",
+        "description": "Mother of Jesus Christ, Queen of Heaven and Earth",
         "size": 22
       },
       {
@@ -204,7 +270,10 @@
         "type": "apostle",
         "feastDay": "March 19",
         "patronage": "Workers, Fathers",
-        "year": 50,
+        "birthYear": -10,
+        "deathYear": 50,
+        "location": "Nazareth, Palestine",
+        "description": "Foster father of Jesus, patron of the universal Church",
         "size": 20
       },
       {
@@ -213,7 +282,10 @@
         "type": "martyr",
         "feastDay": "May 30",
         "patronage": "France, Soldiers",
-        "year": 1431,
+        "birthYear": 1412,
+        "deathYear": 1431,
+        "location": "Domrémy, France",
+        "description": "Peasant girl who received visions, liberated France from English",
         "size": 17
       },
       {
@@ -222,7 +294,10 @@
         "type": "mystic",
         "feastDay": "August 27",
         "patronage": "Mothers, Difficult marriages",
-        "year": 387,
+        "birthYear": 331,
+        "deathYear": 387,
+        "location": "Tagaste, Algeria",
+        "description": "Mother of Augustine, prayed 17 years for his conversion",
         "size": 15
       },
       {
@@ -231,7 +306,10 @@
         "type": "apostle",
         "feastDay": "June 24",
         "patronage": "Baptism, Jordan",
-        "year": 30,
+        "birthYear": -2,
+        "deathYear": 30,
+        "location": "Judea, Palestine",
+        "description": "Forerunner of Christ, baptized Jesus in the Jordan River",
         "size": 19
       },
       {
@@ -240,7 +318,10 @@
         "type": "founder",
         "feastDay": "November 17",
         "patronage": "Bakers, Charitable societies",
-        "year": 1231,
+        "birthYear": 1207,
+        "deathYear": 1231,
+        "location": "Hungary",
+        "description": "Royal princess who gave everything to serve the poor",
         "size": 15
       },
       {
@@ -249,7 +330,10 @@
         "type": "doctor",
         "feastDay": "January 2",
         "patronage": "Hospital administrators",
-        "year": 379,
+        "birthYear": 329,
+        "deathYear": 379,
+        "location": "Caesarea, Turkey",
+        "description": "Cappadocian Father, established hospitals and social services",
         "size": 16
       },
       {
@@ -258,7 +342,10 @@
         "type": "apostle",
         "feastDay": "July 22",
         "patronage": "Penitent sinners",
-        "year": 63,
+        "birthYear": 5,
+        "deathYear": 63,
+        "location": "Magdala, Palestine",
+        "description": "First witness to Christ's resurrection, Apostle to the Apostles",
         "size": 17
       },
       {
@@ -267,8 +354,107 @@
         "type": "founder",
         "feastDay": "November 11",
         "patronage": "France, Soldiers",
-        "year": 397,
+        "birthYear": 316,
+        "deathYear": 397,
+        "location": "Pannonia, Hungary",
+        "description": "Roman soldier turned bishop, shared cloak with beggar",
         "size": 16
+      },
+      {
+        "id": "mother-teresa",
+        "name": "St. Mother Teresa",
+        "type": "mystic",
+        "feastDay": "September 5",
+        "patronage": "Calcutta, Poor",
+        "birthYear": 1910,
+        "deathYear": 1997,
+        "location": "Skopje, Macedonia",
+        "description": "Missionary of Charity, served poorest of the poor in Calcutta",
+        "size": 18
+      },
+      {
+        "id": "john-paul-ii",
+        "name": "St. John Paul II",
+        "type": "mystic",
+        "feastDay": "October 22",
+        "patronage": "World Youth Day, Families",
+        "birthYear": 1920,
+        "deathYear": 2005,
+        "location": "Wadowice, Poland",
+        "description": "Polish Pope who helped end communism, promoted human dignity",
+        "size": 19
+      },
+      {
+        "id": "maximilian-kolbe",
+        "name": "St. Maximilian Kolbe",
+        "type": "martyr",
+        "feastDay": "August 14",
+        "patronage": "Drug addicts, Prisoners",
+        "birthYear": 1894,
+        "deathYear": 1941,
+        "location": "Zduńska Wola, Poland",
+        "description": "Franciscan who died in Auschwitz, volunteered to die for stranger",
+        "size": 16
+      },
+      {
+        "id": "john-chrysostom",
+        "name": "St. John Chrysostom",
+        "type": "doctor",
+        "feastDay": "September 13",
+        "patronage": "Preachers, Epilepsy",
+        "birthYear": 349,
+        "deathYear": 407,
+        "location": "Antioch, Syria",
+        "description": "Golden-mouthed preacher, Archbishop of Constantinople",
+        "size": 16
+      },
+      {
+        "id": "gregory-nazianzus",
+        "name": "St. Gregory of Nazianzus",
+        "type": "doctor",
+        "feastDay": "January 2",
+        "patronage": "Poets, Rhetoricians",
+        "birthYear": 329,
+        "deathYear": 390,
+        "location": "Nazianzus, Turkey",
+        "description": "Cappadocian Father, theologian of the Trinity",
+        "size": 15
+      },
+      {
+        "id": "john-xxiii",
+        "name": "St. John XXIII",
+        "type": "mystic",
+        "feastDay": "October 11",
+        "patronage": "Papal delegates",
+        "birthYear": 1881,
+        "deathYear": 1963,
+        "location": "Sotto il Monte, Italy",
+        "description": "Good Pope John, convened Second Vatican Council",
+        "size": 17
+      },
+      {
+        "id": "faustina",
+        "name": "St. Faustina",
+        "type": "mystic",
+        "feastDay": "October 5",
+        "patronage": "Mercy, Poland",
+        "birthYear": 1905,
+        "deathYear": 1938,
+        "location": "Głogowiec, Poland",
+        "description": "Mystic who promoted Divine Mercy devotion",
+        "size": 15
+      },
+      {
+        "id": "rose-lima",
+        "name": "St. Rose of Lima",
+        "type": "mystic",
+        "feastDay": "August 23",
+        "patronage": "Latin America, Peru",
+        "birthYear": 1586,
+        "deathYear": 1617,
+        "location": "Lima, Peru",
+        "description": "First saint of the Americas, Dominican tertiary and mystic",
+        "size": 14
       }
     ],
     "links": [
@@ -469,6 +655,66 @@
       },
       {
         "source": "mary",
+        "target": "therese",
+        "type": "influence"
+      },
+      {
+        "source": "mother-teresa",
+        "target": "john-paul-ii",
+        "type": "contemporary"
+      },
+      {
+        "source": "maximilian-kolbe",
+        "target": "john-paul-ii",
+        "type": "contemporary"
+      },
+      {
+        "source": "maximilian-kolbe",
+        "target": "francis",
+        "type": "order"
+      },
+      {
+        "source": "john-chrysostom",
+        "target": "basil",
+        "type": "contemporary"
+      },
+      {
+        "source": "gregory-nazianzus",
+        "target": "basil",
+        "type": "contemporary"
+      },
+      {
+        "source": "john-chrysostom",
+        "target": "gregory-nazianzus",
+        "type": "contemporary"
+      },
+      {
+        "source": "john-xxiii",
+        "target": "john-paul-ii",
+        "type": "influence"
+      },
+      {
+        "source": "faustina",
+        "target": "john-paul-ii",
+        "type": "influence"
+      },
+      {
+        "source": "faustina",
+        "target": "therese",
+        "type": "influence"
+      },
+      {
+        "source": "rose-lima",
+        "target": "teresa-avila",
+        "type": "influence"
+      },
+      {
+        "source": "rose-lima",
+        "target": "dominic",
+        "type": "order"
+      },
+      {
+        "source": "mother-teresa",
         "target": "therese",
         "type": "influence"
       }
