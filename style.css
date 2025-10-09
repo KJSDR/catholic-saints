@@ -29,6 +29,8 @@ h1 {
     text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
     font-weight: bold;
     letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(139, 69, 19, 0.6);
+    -webkit-text-stroke: 1px #8B4513;
 }
 
 .subtitle {
